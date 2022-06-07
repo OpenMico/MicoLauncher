@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable-notnight/buttonPanel.xml" value="0.1475" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable/alertTitle.xml" value="0.1475" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable/buttonPanel.xml" value="0.1475" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable/collapseActionView.xml" value="0.1955" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable/homeAsUp.xml" value="0.1955" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable/scrollIndicatorDown.xml" value="0.1475" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable/scrollIndicatorUp.xml" value="0.1475" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable/scrollView.xml" value="0.1475" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable/showCustom.xml" value="0.1955" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable/showHome.xml" value="0.1955" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/drawable/up.xml" value="0.1955" />
+        <entry key="..\:/Android Projects/MicoLauncher/app/src/main/res/layout/view_music_square_card.xml" value="0.1765625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

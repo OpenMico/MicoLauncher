@@ -1,0 +1,73 @@
+package com.xiaomi.smarthome.databinding;
+
+import android.util.SparseIntArray;
+import android.view.View;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.databinding.DataBindingComponent;
+import androidx.databinding.ViewDataBinding;
+import com.xiaomi.smarthome.R;
+
+/* loaded from: classes4.dex */
+public class ShortCardWidgetLightControllerBindingImpl extends ShortCardWidgetLightControllerBinding {
+    @Nullable
+    private static final ViewDataBinding.IncludedLayouts b = null;
+    @Nullable
+    private static final SparseIntArray c = new SparseIntArray();
+    @NonNull
+    private final ConstraintLayout d;
+    private long e;
+
+    @Override // androidx.databinding.ViewDataBinding
+    protected boolean onFieldChange(int i, Object obj, int i2) {
+        return false;
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public boolean setVariable(int i, @Nullable Object obj) {
+        return true;
+    }
+
+    static {
+        c.put(R.id.device_constraint_layout, 1);
+        c.put(R.id.brightness_constraint_layout, 2);
+        c.put(R.id.color_temp_constraint_layout, 3);
+    }
+
+    public ShortCardWidgetLightControllerBindingImpl(@Nullable DataBindingComponent dataBindingComponent, @NonNull View view) {
+        this(dataBindingComponent, view, mapBindings(dataBindingComponent, view, 4, b, c));
+    }
+
+    private ShortCardWidgetLightControllerBindingImpl(DataBindingComponent dataBindingComponent, View view, Object[] objArr) {
+        super(dataBindingComponent, view, 0, (View) objArr[2], (View) objArr[3], (View) objArr[1]);
+        this.e = -1L;
+        this.d = (ConstraintLayout) objArr[0];
+        this.d.setTag(null);
+        setRootTag(view);
+        invalidateAll();
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public void invalidateAll() {
+        synchronized (this) {
+            this.e = 1L;
+        }
+        requestRebind();
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    public boolean hasPendingBindings() {
+        synchronized (this) {
+            return this.e != 0;
+        }
+    }
+
+    @Override // androidx.databinding.ViewDataBinding
+    protected void executeBindings() {
+        synchronized (this) {
+            long j = this.e;
+            this.e = 0L;
+        }
+    }
+}

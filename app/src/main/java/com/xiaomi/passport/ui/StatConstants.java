@@ -1,0 +1,57 @@
+package com.xiaomi.passport.ui;
+
+/* loaded from: classes4.dex */
+public class StatConstants {
+    private static final String STAT_CATEGORY_COMMON = "common_";
+    public static final String STAT_CATEGORY_COMMON_CLICK_RETURN_BUTTON = "common_click_return_button";
+    private static final String STAT_CATEGORY_PASSWORD = "password_";
+    public static final String STAT_CATEGORY_PASSWORD_CAPTCHA_EXCEPTION = "password_captcha_exception";
+    public static final String STAT_CATEGORY_PASSWORD_CLICK_FORGOT_PASSWORD = "password_click_forgot_password";
+    public static final String STAT_CATEGORY_PASSWORD_CLICK_LOGIN = "password_click_login";
+    public static final String STAT_CATEGORY_PASSWORD_CLICK_SIGN_UP = "password_click_sign_up";
+    public static final String STAT_CATEGORY_PASSWORD_INVALID_CREDENTIAL_EXCEPTION = "password_invalid_credential_exception";
+    public static final String STAT_CATEGORY_PASSWORD_INVALID_USER_NAME_EXCEPTION = "password_invalid_user_name_exception";
+    public static final String STAT_CATEGORY_PASSWORD_IO_EXCEPTION = "password_io_exception";
+    public static final String STAT_CATEGORY_PASSWORD_LOGIN_SUCCESS = "password_login_success";
+    public static final String STAT_CATEGORY_PASSWORD_NEED_NOTIFICATION_EXCEPTION = "password_need_notification_exception";
+    public static final String STAT_CATEGORY_PASSWORD_NEED_VERIFICATION_EXCEPTION = "password_need_verification_exception";
+    public static final String STAT_CATEGORY_PASSWORD_SIGN_UP_SUCCESS = "password_sign_up_success";
+    public static final String STAT_CATEGORY_PASSWORD_UNKNOW_ERROR = "password_unknow_error";
+    private static final String STAT_CATEGORY_SMS = "sms_";
+    public static final String STAT_CATEGORY_SMS_CLICK_NEXT_AFTER_GET_PHONE = "sms_click_next_after_get_phone";
+    public static final String STAT_CATEGORY_SMS_CLICK_NEXT_AFTER_GET_TICKET = "sms_click_next_after_get_ticket";
+    public static final String STAT_CATEGORY_SMS_CLICK_REGAIN_SEND_TICKET = "sms_click_regain_send_ticket";
+    public static final String STAT_CATEGORY_SMS_GET_PHONE_AUTHMETHOD = "sms_get_phone_authmethod";
+    public static final String STAT_CATEGORY_SMS_GET_PHONE_AUTHMETHOD_INVALID_PHONENUM_EXCEPTION = "sms_get_phone_authmethod_invalid_phonenum_exception";
+    public static final String STAT_CATEGORY_SMS_GET_PHONE_AUTHMETHOD_IO_EXCEPTION = "sms_get_phone_authmethod_io_exception";
+    public static final String STAT_CATEGORY_SMS_GET_PHONE_AUTHMETHOD_PSW = "sms_get_phone_authmethod_psw";
+    public static final String STAT_CATEGORY_SMS_GET_PHONE_AUTHMETHOD_SMS = "sms_get_phone_authmethod_sms";
+    public static final String STAT_CATEGORY_SMS_GET_PHONE_AUTHMETHOD_SUCCESS = "sms_get_phone_authmethod_success";
+    public static final String STAT_CATEGORY_SMS_GET_PHONE_AUTHMETHOD_UNKNOW_ERROR = "sms_get_phone_authmethod_unknow_error";
+    public static final String STAT_CATEGORY_SMS_REGAIN_SEND_TICKET_CAPTCHA_EXCEPTION = "sms_regain_send_ticket_captcha_exception";
+    public static final String STAT_CATEGORY_SMS_REGAIN_SEND_TICKET_INVALID_PHONENUM_EXCEPTION = "sms_regain_send_ticket_invalid_phonenum_exception";
+    public static final String STAT_CATEGORY_SMS_REGAIN_SEND_TICKET_IO_EXCEPTION = "sms_regain_send_ticket_io_exception";
+    public static final String STAT_CATEGORY_SMS_REGAIN_SEND_TICKET_REACH_LIMIT_EXCEPTION = "sms_regain_send_ticket_reach_limit_exception";
+    public static final String STAT_CATEGORY_SMS_REGAIN_SEND_TICKET_SUCCESS = "sms_regain_send_ticket_success";
+    public static final String STAT_CATEGORY_SMS_REGAIN_SEND_TICKET_TOKEN_EXPIRED_EXCEPTION = "sms_regain_send_ticket_token_expired_exception";
+    public static final String STAT_CATEGORY_SMS_REGAIN_SEND_TICKET_UNKNOW_ERROR = "sms_regain_send_ticket_unknow_error";
+    public static final String STAT_CATEGORY_SMS_SEND_TICKET = "sms_send_ticket";
+    public static final String STAT_CATEGORY_SMS_SEND_TICKET_CAPTCHA_EXCEPTION = "sms_send_ticket_captcha_exception";
+    public static final String STAT_CATEGORY_SMS_SEND_TICKET_INVALID_PHONENUM_EXCEPTION = "sms_send_ticket_invalid_phonenum_exception";
+    public static final String STAT_CATEGORY_SMS_SEND_TICKET_IO_EXCEPTION = "sms_send_ticket_io_exception";
+    public static final String STAT_CATEGORY_SMS_SEND_TICKET_REACHLIMIT_EXCEPTION = "sms_send_ticket_reachlimit_exception";
+    public static final String STAT_CATEGORY_SMS_SEND_TICKET_SUCCESS = "sms_send_ticket_success";
+    public static final String STAT_CATEGORY_SMS_SEND_TICKET_TOKENEXPIRED_EXCEPTION = "sms_send_ticket_tokenexpired_exception";
+    public static final String STAT_CATEGORY_SMS_SEND_TICKET_UNKNOW_ERROR = "sms_send_ticket_unknow_error";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_INVALID_PHONENUM_EXCEPTION = "sms_ticket_login_invalid_phonenum_exception";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_INVALID_VERIFYCODE_EXCEPTION = "sms_ticket_login_invalid_verifycode_exception";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_IO_EXCEPTION = "sms_ticket_login_io_exception";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_NEED_NOTIFICATION_EXCEPTION = "sms_ticket_login_need_notification_exception";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_NEED_SET_PSW_EXCEPTION = "sms_ticket_login_need_set_psw_exception";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_PHONE_RECYCLE_EXCEPTION = "sms_ticket_login_phone_recycle_exception";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_SET_PSW_ILLEGAL_EXCEPTION = "sms_ticket_login_set_psw_illegal_exception";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_SUCCESS = "sms_ticket_login_success";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_TOKEN_EXPIRED_EXCEPTION = "sms_ticket_login_token_expired_exception";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_UNKNOW_ERROR = "sms_ticket_login_unknow_error";
+    public static final String STAT_CATEGORY_SMS_TICKET_LOGIN_USER_RESTRICTED_EXCEPTION = "sms_ticket_login_user_restricted_exception";
+}

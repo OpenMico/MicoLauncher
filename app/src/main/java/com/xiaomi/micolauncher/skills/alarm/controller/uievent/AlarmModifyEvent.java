@@ -1,0 +1,8 @@
+package com.xiaomi.micolauncher.skills.alarm.controller.uievent;
+
+import com.xiaomi.micolauncher.skills.alarm.model.bean.AlarmRealmObjectBean;
+
+/* loaded from: classes3.dex */
+public class AlarmModifyEvent {
+    public AlarmRealmObjectBean alarmItem;
+}

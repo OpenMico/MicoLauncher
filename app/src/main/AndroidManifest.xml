@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="9999999" android:versionName="debug" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.xiaomi.micolauncher" android:platformBuildVersionCode="28" android:platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="32"
+        tools:ignore="GradleOverrides" />
+    <permission android:label="@string/use_mico_device_service" android:name="com.xiaomi.micolauncher.deviceservice.permission.USE_MICO_DEVICE_SERVICE" android:protectionLevel="normal" android:description="@string/use_mico_device_service"/>
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CONTROL_DISPLAY_BRIGHTNESS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_INSTALL_SESSIONS"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNAL_DELETE_CACHE_FILES"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="com.xiaomi.micolauncher.deviceservice.permission.USE_MICO_DEVICE_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.NETWORK_SETTINGS"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MANAGE_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.DUMP"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <permission android:name="com.xiaomi.micolauncher.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <permission android:name="com.xiaomi.micolauncher.passportinfoprovider.permission.READ_ACCOUNT_INFO" android:protectionLevel="normal"/>
+    <permission android:name="com.xiaomi.permission.MICO_GROUP_HOME" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.xiaomi.micolauncher.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.xiaomi.mico.mqtt.service.application.permission.USE_MQTT"/>
+    <uses-permission android:name="com.xiaomi.mico.appstore.permission.READ_APP_INFO"/>
+    <uses-permission android:name="android.permission.TRANSMIT_IR" android:required="false"/>
+    <uses-feature android:name="android.hardware.consumerir"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="com.xiaomi.mi_connect_service.permission.IDM_CLOUD_CONFIG"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    <uses-permission android:name="android.permission.MANAGE_MEDIA_PROJECTION"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <queries>
+        <provider android:authorities="milink.mi.com"/>
+        <provider android:authorities="provider.milink.mi.com"/>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.xiaomi.passport.permission.PASSPORT_UI_CONTROLLER_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.xiaomi.micolauncher.application.MicoApplication" android:allowBackup="true" android:hardwareAccelerated="true" android:largeHeap="false" android:supportsRtl="true" android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:name="com.xiaomi.micolauncher.skills.alarm.view.HourlyChimeActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.xiaomi.mico.wifidemo.WifiAutoConfigActivity" android:exported="true"/>
+        <activity android:name="com.xiaomi.micolauncher.module.applist.MiTvCodeverEditActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.module.video.ui.EnterChildModeConfirmActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.music.vip.BookVipActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.music.vip.BookSinglePurchaseActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.music.vip.MusicVipActivity" android:launchMode="singleTop"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="mico.music.vip"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.micolauncher.module.main.KidsActivity"/>
+        <activity android:theme="@style/AppTheme_Setting" android:name="com.xiaomi.micolauncher.module.applist.ThirdAppListActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.module.initialize.ShowDevQRActivity"/>
+        <provider android:name="com.xiaomi.micolauncher.common.contentprovider.MicoPassportInfoProvider" android:readPermission="com.xiaomi.micolauncher.passportinfoprovider.permission.READ_ACCOUNT_INFO" android:exported="true" android:authorities="com.xiaomi.micolauncher"/>
+        <provider android:name="com.xiaomi.micolauncher.common.contentprovider.ProvisionFeatureProvider" android:permission="com.xiaomi.permission.MICO_GROUP_HOME" android:exported="true" android:authorities="com.xiaomi.mico.home.provider.PROVISION_FEATURE"/>
+        <provider android:name="com.xiaomi.micolauncher.common.contentprovider.VideoMonitorFeatureProvider" android:permission="com.xiaomi.permission.MICO_GROUP_HOME" android:exported="true" android:authorities="com.xiaomi.mico.home.provider.VIDEO_MONITOR_FEATURE"/>
+        <activity android:theme="@style/MainSplash" android:name="com.xiaomi.micolauncher.Launcher" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:screenOrientation="landscape" android:windowSoftInputMode="stateAlwaysHidden" android:resumeWhilePausing="false"
+            android:exported="true">
+            <meta-data android:name="com.xiaomi.mico.no-global-action" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.micolauncher.module.child.childvideo.MiTvVipActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="mico.childvideo.vip"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.micolauncher.module.child.childvideo.MiTvVideoDetailActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="mico.childvideo.detail"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.micolauncher.module.child.childvideo.ChildVideoGroupListActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.weather.WeatherViewActivity" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.weather.WeatherLocationHintActivity" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/PlayerStyle" android:name="com.xiaomi.micolauncher.skills.music.view_v2.PlayerActivityV2" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/TranslucentStyle" android:name="com.xiaomi.micolauncher.skills.music.view_v2.PlayerListActivityV2" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/TranslucentStyle" android:name="com.xiaomi.micolauncher.skills.music.view_v2.AudioBookPlayListActivity" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/TranslucentStyle" android:name="com.xiaomi.micolauncher.module.child.course.CourseTabSelectActivity" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/TranslucentStyle" android:name="com.xiaomi.micolauncher.module.child.LockSetActivity" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.music.view.QQMusicAuthInvalidActivity" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/AppTheme_Setting" android:name="com.xiaomi.micolauncher.common.webview.CommonWebActivity" android:screenOrientation="landscape"/>
+        <service android:name="com.xiaomi.micolauncher.skills.music.service.AudioPlayerService" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaomi.micolauncher.common.services.deviceservice.MicoDeviceService" android:permission="com.xiaomi.micolauncher.deviceservice.permission.USE_MICO_DEVICE_SERVICE" android:enabled="true" android:exported="true"/>
+        <service android:name="com.xiaomi.micolauncher.common.services.MicoRemoteService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.IMicoRemoteService"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/AppThemeNoAnimation" android:name="com.xiaomi.micolauncher.skills.countdown.view.CountDownActivity" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.alarm.view.AlarmCreationPromptActivity" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/OpaqueStyle" android:name="com.xiaomi.micolauncher.skills.alarm.view.AlarmBoomActivity" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/AppTheme_Setting" android:name="com.xiaomi.micolauncher.skills.alarm.view.AlarmListActivity" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/AppTheme_Setting" android:name="com.xiaomi.micolauncher.skills.alarm.view.AlarmListBigScreenActivity" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.alarm.view.AlarmDetailActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.module.weather.WeatherDetailActivity" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.module.weather.WeatherDetailX08Activity" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.common.player.view.ScrollTextActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.baike.view.BaikeImageActivity" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/OpaqueStyle" android:name="com.xiaomi.micolauncher.skills.openplatform.view.OpenPlatformChatListActivity" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.account.openauth.AuthorizeActivity"/>
+        <activity android:theme="@style/AppTheme_Setting" android:name="com.xiaomi.micolauncher.common.base.DialogActivity"/>
+        <activity android:theme="@style/AppTheme_Setting_DayNight" android:name="com.xiaomi.micolauncher.skills.miot.multipledevices.MiotMultipleDevicesSelectActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/AppTheme_Setting" android:name="com.xiaomi.micolauncher.module.miot.mesh.MeshScanActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/AppTheme_Setting" android:name="com.xiaomi.micolauncher.module.miot.mesh.MeshDevicesShowActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/AppTheme_Setting" android:name="com.xiaomi.micolauncher.module.miot.mesh.IotDevicesProvisionRoomSettingActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/AppTheme_Setting" android:name="com.xiaomi.micolauncher.module.miot.mesh.IotDevicesBindNeedWifiActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/AppTheme_Setting" android:name="com.xiaomi.micolauncher.module.miot.mesh.IotDevicesProvisionRoomSettingCompleteActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <service android:name="com.xiaomi.micolauncher.common.schema.BatteryPrintService"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.xiaomi.micolauncher.common.schema.SchemaActivity" android:exported="true" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="mico" android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="thirdparty" android:host="*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.UBUS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.PRINT_BATTERY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.START_CAPTURE_LOG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.STOP_CAPTURE_LOG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.CLEAR_LOG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.DMESG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.PLAY_URL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.MUTE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.STOP_PLAY_URL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.SET_ENV"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.GET_ENV"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.START_VIDEO_APP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.TEST_PLAY_VIDEO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.TEST_OT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.START_THIRD_APP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.SET_FLOW_PEAK_TIME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.WRITE_MICO_SERVICE_TOKEN_TO_FILE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.DUMP_WIFI"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.UPLOAD_LOG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.xiaomi.micolauncher.common.stat.StatJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="true"/>
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":pushservice"/>
+        <service android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" android:process=":pushservice"/>
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true"/>
+        <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true"/>
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.micolauncher.common.push.MessageReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.xiaomi.micolauncher.module.commandsdk.MiSoundBoxCommandSdkService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MI_SOUND_BOX_COMMAND_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:label="@string/app_name" android:name="com.ktcp.voicedevice.device.VoiceDeviceService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.ktcp.voicedevice.ACTION_MICO_BIND_SERVICE"/>
+                <action android:name="com.ktcp.voicedevice.ACTION_BIND_SERVICE"/>
+                <action android:name="com.ktcp.voicedevice.ACTION_TEST"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/AppTheme_BlackBackground" android:name="com.xiaomi.micolauncher.skills.video.player.VideoPlayerActivity" android:launchMode="singleTask"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="xiaomi.intent.action.VIDEO_PLAY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.micolauncher.module.miot.MiotMainActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.xiaomi.micolauncher.module.miot_v2.MIoTMainActivityV2" android:launchMode="singleTask"/>
+        <activity android:name="com.xiaomi.micolauncher.module.music.MusicPatchWallActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.music.MusicFavoriteListActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.music.MusicCategoryListActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.music.MusicGroupListActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.station.StationPatchWallActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.station.StationCategoryListActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="mico.station.list"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.micolauncher.module.station.StationGroupListActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/OpaqueStyle" android:name="com.xiaomi.micolauncher.module.video.ui.VideoPatchWallActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.childsong.ChildSongActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.childsong.ChildSongGroupListActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.video.ui.VideoGroupListActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/OpaqueStyle" android:name="com.xiaomi.micolauncher.module.video.ui.VideoCategoryListActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.video.ui.VideoRecentListActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.video.ui.VideoThirdPartyJumpActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/OpaqueStyle" android:name="com.xiaomi.micolauncher.module.skill.ui.SkillPatchWallActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.skill.ui.SkillDetailListActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.skill.ui.SkillDetailAboutActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.skill.ui.SkillCategoryListActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.skill.ui.SkillCategoryDetailListActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.xiaomi.micolauncher.module.video.childmode.ChildModeForbidVideoActivity" android:exported="true" android:launchMode="singleInstance" android:screenOrientation="landscape" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/OpaqueStyle" android:name="com.xiaomi.micolauncher.skills.video.view.VideoDetailActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.video.view.VideoRecommendationActivity" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.common.CommonSkillFragmentActivity" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/AppTheme_MicoInit" android:name="com.xiaomi.micolauncher.module.initialize.BootActivity" android:screenOrientation="landscape">
+            <meta-data android:name="com.xiaomi.mico.no-global-action" android:value="true"/>
+        </activity>
+        <activity android:theme="@style/AppTheme_NoStatusBar_FullScreen" android:name="com.xiaomi.micolauncher.module.initialize.IntroMovieActivity" android:launchMode="singleInstance" android:allowTaskReparenting="false"
+            android:exported="false">
+            <meta-data android:name="com.xiaomi.mico.no-global-action" android:value="true"/>
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.INTRO_MOVIE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.micolauncher.skills.personalize.view.PersonalizeRichMediaActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.module.localalbum.AlbumBlankActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.voiceprint.view.VoicePrintRegisterActivity" android:launchMode="singleTop"/>
+        <service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl"/>
+        <service android:name="com.xiaomi.micolauncher.skills.common.dlna.DlnaDevice$MyUpnpServiceImpl"/>
+        <service android:name="com.xiaomi.micolauncher.common.services.job.JobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.xiaomi.micolauncher.common.services.job.AlarmRunStateCheckJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.xiaomi.micolauncher.common.player.view.GeneralTextActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.common.player.view.PlayTextActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.voice.WhiteNoiseActivity" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.common.player.view.BaikeActivityX08" android:launchMode="singleInstance"/>
+        <activity android:name="com.xiaomi.micolauncher.skills.ancientpoem.AncientPoemActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.MoreAppActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.ChildSongActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.ChildStoryActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.AudiobookCategoryActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.ChildVideoActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.SimpleWebActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.module.homepage.activity.SimpleWebActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.ChildCourseActivity" android:launchMode="singleTop"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="mico.mitv.course"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.AudiobookFavoriteActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.AudiobookHistoryActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.AudiobookBoughtActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.AudiobookSingleCategoryActivity" android:launchMode="singleTop"/>
+        <service android:name="org.hapjs.features.channel.ChannelService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="org.hapjs.features.channel.action.BIND"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.xiaomi.micolauncher.module.appstore.activity.AppStoreActivity" android:launchMode="singleInstance"/>
+        <activity android:name="com.xiaomi.micolauncher.module.appstore.activity.AppDownloadStatusActivity" android:launchMode="singleInstance"/>
+        <activity android:name="com.xiaomi.micolauncher.module.audiobooks.AudioBookActivity"/>
+        <activity android:name="com.xiaomi.micolauncher.module.setting.DevTestActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.DEV_ENTRANCE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.SkillInfoActivity"/>
+        <activity android:theme="@style/AppTheme_DayNight" android:name="com.xiaomi.micolauncher.module.intercom.IntercomActivity" android:exported="true" android:launchMode="singleInstance"/>
+        <activity android:name="com.xiaomi.micolauncher.module.homepage.activity.VideoListActivity" android:screenOrientation="landscape"/>
+        <service android:name="com.xiaomi.micolauncher.module.appstore.manager.AppStoreService2" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mico.appstore.action.BIND"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.xiaomi.micolauncher.module.appstore.manager.DownloadManagerBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.micolauncher.module.appstore.manager.AppStoreHandler" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mico.appstore.APP_STORE_ACTION"/>
+                <action android:name="com.xiaomi.mico.appstore.APP_STORE_EVENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.micolauncher.module.AccountLoginReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.mico.account.LOGIN_SUCCEED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.micolauncher.module.setting.SettingsReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.mico.settings.RESET"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.xiaomi.micolauncher.module.multicp.HookThirdPartyAppsService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessible_service_config"/>
+        </service>
+        <service android:name="com.xiaomi.micolauncher.skills.alarm.HourlyChimeService"/>
+        <service android:name="com.zlw.main.recorderlib.recorder.RecordService"/>
+        <service android:name="com.mi.milink.mediacore.MediaCoreService" android:enabled="true" android:exported="false" android:priority="1000"/>
+        <service android:name="com.xiaomi.miplay.mylibrary.MiPlayAudioService" android:enabled="true" android:exported="true" android:priority="1000">
+            <intent-filter>
+                <action android:name="com.xiaomi.miplay.action.MIPLAY_AUDIO_CLIENT_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaomi.micolauncher.module.setting.utils.SleepModeService"/>
+        <service android:name="com.xiaomi.miot.host.service.MiotHostService" android:enabled="true" android:exported="false" android:process=":miot">
+            <intent-filter android:priority="1000">
+                <action android:name="com.xiaomi.miot.host.service.IMiotHostService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaomi.miio.linux.service.LinuxMiioService" android:enabled="true" android:exported="false" android:process=":linux_ot">
+            <intent-filter android:priority="1000">
+                <action android:name="com.miot.service.action.LINUX_OT_SERVICE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.xiaomi.tool.TestReceiver" android:enabled="true" android:exported="true" android:process=":miot">
+            <intent-filter>
+                <action android:name="com.xiaomi.test"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/SmartHomeTheme" android:name="com.xiaomi.smarthome.ui.MediaListActivity"/>
+        <activity android:theme="@style/SmartHomeTheme" android:name="com.xiaomi.smarthome.ui.DeviceListActivity"/>
+        <activity android:theme="@style/SmartHomeTheme" android:name="com.xiaomi.smarthome.ui.CategoryReorderActivity"/>
+        <activity android:name="com.xiaomi.smarthome.ui.UserGuideActivity"/>
+        <activity android:theme="@style/versionCheckLibvtransparentTheme" android:name="com.allenliu.versionchecklib.core.VersionDialogActivity" android:launchMode="singleTask"/>
+        <provider android:name="com.allenliu.versionchecklib.core.VersionFileProvider" android:exported="false" android:authorities="com.xiaomi.micolauncher.versionProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/versionchecklib_file_paths"/>
+        </provider>
+        <activity android:theme="@style/versionCheckLibvtransparentTheme" android:name="com.allenliu.versionchecklib.core.PermissionDialogActivity" android:launchMode="singleTask"/>
+        <service android:name="com.allenliu.versionchecklib.core.MyService" android:enabled="true" android:exported="true"/>
+        <service android:name="com.allenliu.versionchecklib.v2.ui.VersionService" android:exported="false" android:priority="1000"/>
+        <activity android:theme="@style/versionCheckLibvtransparentTheme" android:name="com.allenliu.versionchecklib.v2.ui.UIActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/versionCheckLibvtransparentTheme" android:name="com.allenliu.versionchecklib.v2.ui.DownloadingActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/versionCheckLibvtransparentTheme" android:name="com.allenliu.versionchecklib.v2.ui.DownloadFailedActivity" android:launchMode="singleTask"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <service android:name="com.xiaomi.miplay.mylibrary.tv.MiplayAudioTVService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.miplay.action.TV_MIPLAY_AUDIO_CLIENT_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaomi.miplay.mylibrary.external.MiplayAccessExternalService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="COM.XIAOMI.MIPLAY.ACTION.EXTERNAL_CIRCULATION_CLIENT_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/PassportTheme.NoActionBarExtension" android:name="com.xiaomi.passport.ui.internal.AddAccountActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:theme="@style/PassportTheme.NoActionBar" android:name="com.xiaomi.passport.ui.internal.ConfirmCredentialActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/PassportTheme.NoActionBar" android:name="com.xiaomi.passport.ui.internal.NotificationActivity" android:windowSoftInputMode="stateHidden"/>
+        <provider android:name="com.xiaomi.passport.ui.internal.PassportUIInitProvider" android:exported="false" android:authorities="com.xiaomi.micolauncher.PassportUIInitProvider"/>
+        <activity android:theme="@style/PassportTheme.NoActionBar" android:name="com.xiaomi.passport.ui.internal.SnsAuthActivity"/>
+        <activity android:theme="@style/PassportTheme.NoActionBar" android:name="com.xiaomi.passport.ui.internal.AreaCodePickerActivity"/>
+        <activity android:theme="@style/PassportTheme.NoActionBar" android:name="com.xiaomi.passport.ui.diagnosis.PassportDiagnosisActivity"/>
+        <activity android:theme="@style/PassportTheme.NoActionBar" android:label="@string/account_user_details" android:name="com.xiaomi.passport.ui.settings.AccountSettingsActivity"/>
+        <activity android:theme="@style/TransparentCompat" android:label="" android:name="com.xiaomi.passport.ui.settings.UserAvatarUpdateActivity"/>
+        <activity android:theme="@style/PassportTheme.NoActionBar" android:label="@string/account_user_phone" android:name="com.xiaomi.passport.ui.settings.UserPhoneInfoActivity" android:excludeFromRecents="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/PassportTheme" android:label="@string/account_bind_secure_phone_title" android:name="com.xiaomi.passport.ui.settings.BindPhoneActivity" android:excludeFromRecents="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/PassportTheme.NoActionBar" android:label="@string/account_bind_secure_email_title" android:name="com.xiaomi.passport.ui.settings.BindSafeEmailActivity" android:excludeFromRecents="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/PassportTheme" android:label="@string/passport_area_code_title" android:name="com.xiaomi.passport.ui.settings.AreaCodePickerActivity" android:configChanges="mcc|mnc|keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/PassportTheme.NoActionBar" android:label="@string/change_password" android:name="com.xiaomi.passport.ui.settings.ChangePasswordActivity" android:configChanges="mcc|mnc|keyboardHidden|orientation|screenSize"/>
+        <provider android:name="com.xiaomi.passport.ui.settings.provider.PassportFileProvider" android:exported="false" android:authorities="com.xiaomi.micolauncher.passport.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/passport_provider_file_paths"/>
+        </provider>
+        <activity android:theme="@style/PassportTheme" android:label="@string/passport_account_label" android:name="com.xiaomi.passport.ui.internal.LoginQRCodeScanResultActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="mcc|mnc|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.xiaomi.passport.ui.sns.WXEntryActivity" android:exported="true"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_application_id"/>
+        <meta-data android:name="com.facebook.sdk.CallbackOffset" android:value="1103"/>
+        <activity android:theme="@style/Passport.Theme.Light.Dialog.NoTitle" android:name="com.xiaomi.passport.ui.internal.QuickLoginActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.XIAOMI_ACCOUNT_QUICK_LOGIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/translucent" android:name="com.xiaomi.passport.ui.settings.UserInfoTransparentActivity" android:excludeFromRecents="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.jakewharton.processphoenix.ProcessPhoenix" android:process=":phoenix"/>
+        <uses-library android:name="com.xiaomi.mitv.api" android:required="false"/>
+        <provider android:name="com.milink.runtime.lock.LockContentProvider" android:exported="true" android:authorities="milink.mi.com"/>
+        <receiver android:name="com.milink.runtime.BootCompleteReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.milink.runtime.provider.DataContentProvider" android:exported="true" android:authorities="provider.milink.mi.com"/>
+        <service android:name="com.xiaomi.passport.accountmanager.MiAuthenticatorService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.accounts.AccountAuthenticator"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.DarkActionBar" android:name="com.xiaomi.accountsdk.diagnosis.ui.PassportDiagnosisActivity"/>
+        <activity android:theme="@style/zxing_CaptureTheme" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:name="com.xiaomi.miot.support.service.MiAccountService" android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.miot.support.ACCOUNT"/>
+                <category android:name="android.intent.category.default"/>
+            </intent-filter>
+        </service>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.xiaomi.micolauncher.androidx-startup">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.xiaomi.micolauncher.lifecycle-process"/>
+        <meta-data android:name="animation" android:value="1"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:multiprocess="true" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:name="com.blankj.utilcode.util.UtilsFileProvider" android:exported="false" android:authorities="com.xiaomi.micolauncher.utilcode.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:name="com.blankj.utilcode.util.MessengerUtils$ServerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.micolauncher.messenger"/>
+            </intent-filter>
+        </service>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <meta-data android:name="folme" android:value="2"/>
+        <meta-data android:name="devicebaseinfo" android:value="1"/>
+        <activity android:theme="@style/Theme.Transparent" android:name="org.hapjs.features.channel.transparentactivity.TransparentActivity" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="org.hapjs.features.channel.action.LAUNCH_APP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
